@@ -12,21 +12,24 @@ narrator: US English Female
 comment:  Try to write a short comment about
           your course, multiline is also okay.
 
+@HTML: @__HTML(@uid)
 
-@HTML
+@__HTML
 <script>
     document.getElementById("@0").innerHTML = `@input`;
     "LIA: stop";
 </script>
 
-<div id="@0"></div>
+<div id="@0" class="persistent"></div>
 @end
 
 @JavaScript
 <script>
 let log = console.log;
 
-console.log = function(e){ send.lia("log", e+"\n") };
+send.lia("clr", "");
+
+console.log = function(e){ send.lia("output", e+"\n") };
 
 eval(`@input`)
 
@@ -36,35 +39,42 @@ console.log = log;
 </script>
 @end
 
-@HTML_JavaScript
+
+
+@HTML_JavaScript: @__HTML_JavaScript(@uid)
+
+@__HTML_JavaScript
 <script>
 document.getElementById("@0").innerHTML = `@input`;
 
 let log = console.log;
 
-console.log = function(e){ send.lia("log", e+"\n") };
+send.lia("clr", "");
 
-eval(`@input(1)`);
+console.log = function(e){ send.lia("output", e+"\n") };
+
+eval(`@input(1)`)
 
 console.log = log;
 
 "LIA: stop";
 </script>
 
-<div id="@0"></div>
+<div id="@0" class="persistent"></div>
 @end
 
 -->
 
 # WebDev Template
 
-This short introduction presents the application of LiaScript for WebDevelopment. The corresponding code is available on 
+This short introduction presents the application of LiaScript for
+WebDevelopment. The corresponding code is available on
 
 https://github.com/liaScript/WebDev_template/edit/master/README.md
 
-The presentation mode can be activated by clicking on 
+The presentation mode can be activated by clicking on
 
-https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/WebDev_template/master/README.md#1 
+https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/WebDev_template/master/README.md#1
 
 
 ## HTML
@@ -89,11 +99,16 @@ Feel free to change the code and to test the output by clicking the execute butt
     </tr>
 </table>
 ```
-@HTML(table_example)
+@HTML
+
 
 ## JavaScript
 
-Ok, this was a static HTML example, but how can we add dynamic elements? We need to include some lines of code ... let's start with some basics. Again, you can adapt the code according to your project and test the algorithm immediately. Please consider the version counter on the right, it offers the opportunity to switch comfortably between different states of your code.
+Ok, this was a static HTML example, but how can we add dynamic elements? We need
+to include some lines of code ... let's start with some basics. Again, you can
+adapt the code according to your project and test the algorithm immediately.
+Please consider the version counter on the right, it offers the opportunity to
+switch comfortably between different states of your code.
 
 ``` javascript for-loop.js
 let fak = 1;
@@ -118,4 +133,4 @@ Now we have to merge both worlds ... have fun :-)
 ```javascript  test.js
 document.getElementById("hallo_id").innerHTML = "TEST";
 ```
-@HTML_JavaScript(example2)
+@HTML_JavaScript
