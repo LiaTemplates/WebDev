@@ -79,6 +79,9 @@ https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/
 
 ## HTML
 
+We start with a short HTML-snippet. Feel free extend or to change the code, afterwards you can evaluate
+the output by clicking the blue execute button below the code box.
+
 ``` html table.html
 <h1>This is an example of a table</h1>
 
