@@ -58,12 +58,21 @@ console.log = log;
 
 # WebDev Template
 
+This short introduction presents the application of LiaScript for WebDevelopment. The corresponding code is available on 
+
+https://github.com/liaScript/WebDev_template/edit/master/README.md
+
+The presentation mode can be activated by clicking on 
+
+https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/WebDev_template/master/README.md#1 
 
 
 ## HTML
 
 ``` html table.html
 <h1>This is an example of a table</h1>
+
+Feel free to change the code and to test the output by clicking the execute button below the code box.
 
 <table>
     <tr>
@@ -84,6 +93,8 @@ console.log = log;
 
 ## JavaScript
 
+Ok, this was a static HTML example, but how can we add dynamic elements? We need to include some lines of code ... let's start with some basics. Again, you can adapt the code according to your project and test the algorithm immediately. Please consider the version counter on the right, it offers the opportunity to switch comfortably between different states of your code.
+
 ``` javascript for-loop.js
 let fak = 1;
 
@@ -98,6 +109,8 @@ console.log("fin")
 
 
 ## HTML & JavaScript
+
+Now we have to merge both worlds ... have fun :-)
 
 ```html index.html
 <h1 id="hallo_id"> Hallo </h1>
