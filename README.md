@@ -25,7 +25,8 @@ comment:  A set of macros, that can be used for teachning (front-end)
 
 @WebDev.JS
 <script>
-eval(`@input`);
+let rslt = eval(`@input`);
+console.log(rslt);
 "LIA: stop";
 </script>
 @end
@@ -213,7 +214,8 @@ document. This way some initialization can be implemented.
 
 @WebDev.JS
 <script>
-eval(`@input`);
+let rslt = eval(`@input`);
+console.log(rslt);
 "LIA: stop";
 </script>
 @end
