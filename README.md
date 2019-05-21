@@ -69,7 +69,7 @@ window.getDocHeight = function(doc) {
 @end
 -->
 
-# WebDev Template
+# WebDev - Template
 
                          --{{0}}--
 This document defines basic macros, to be used in
