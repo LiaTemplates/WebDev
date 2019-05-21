@@ -79,11 +79,11 @@ Markdown code-blocks, they will be made editable and executable.
 
 __Try it on LiaScript:__
 
-https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/WebDev_template/master/README.md
+https://liascript.github.io/course/?https://raw.githubusercontent.com/liaTemplates/WebDev/master/README.md
 
 __See the project on Github:__
 
-https://github.com/liaScript/WebDev_template
+https://github.com/liaTemplates/WebDev
 
 
                          --{{1}}--
@@ -97,7 +97,7 @@ it, as you wish.
                            {{1}}
 1. Load the macros via
 
-   `import: https://raw.githubusercontent.com/liaScript/WebDev_template/master/README.md`
+   `import: https://raw.githubusercontent.com/liaTemplates/WebDev/master/README.md`
 
 2. Copy the definitions into your Project
 
@@ -265,4 +265,4 @@ If you want to minimize loading effort in your LiaScript project, you can also
 copy this code and paste it into your main comment header, see the code in the
 raw file of this document.
 
-{{1}} https://raw.githubusercontent.com/liaScript/WebDev_template/master/README.md
+{{1}} https://raw.githubusercontent.com/liaTemplates/WebDev/master/README.md
