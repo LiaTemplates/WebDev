@@ -9,6 +9,8 @@ language: en
 
 narrator: US English Female
 
+logo:     https://wiki.selfhtml.org/images/thumb/7/78/HTML-CSS-JS.svg/400px-HTML-CSS-JS.svg.png
+
 comment:  A set of macros, that can be used for teachning (front-end)
           web-development, including (HTML and JavaScript).
 
